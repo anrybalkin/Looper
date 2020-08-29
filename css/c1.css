@@ -1,0 +1,359 @@
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    background: #FFFFFF;
+    overflow-x: hidden;
+}
+
+/*      header      */
+
+.header-block {
+    width: 100%;
+    background-color: #fff;
+    height: 70px;
+    padding-top: 20px;
+}
+
+.headline {
+    padding-top: 10%;
+}
+
+.header {
+    width: 100%;
+    height: 360px;
+    background-image: linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%), linear-gradient(#5E239D, #5E239D), url(../img/temp/Cheader.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.wrapper nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo a {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    letter-spacing: 2px;
+}
+
+.phone {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.phone a {
+    text-decoration: none;
+}
+
+.phone img {
+    position: absolute;
+    left: -36px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 25%;
+}
+
+.nav-menu li a {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 14.4px;
+    line-height: 30px;
+    letter-spacing: 2px;
+    color: #30124e;
+}
+
+.nav-menu li hr {
+    display: none;
+    width: 65%;
+    height: 1px;
+    background: #FCFCFC;
+    margin: 0 auto;
+}
+
+.nav-menu li:hover hr {
+    display: block;
+}
+
+.toggle {
+    position: relative;
+}
+
+/*          address         */
+
+.address {
+    height: 800px;
+}
+
+.address-block {
+    display: flex;
+}
+
+.address-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 144px;
+    position: relative;
+}
+
+.address-text img:nth-child(2) {
+    position: absolute;
+    left: -110px;
+    top: 144px;
+}
+
+.address-pic {
+    width: 50%;
+    position: relative;
+}
+
+.address-pic p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 720px;
+    height: 1224px;
+    z-index: 2;
+}
+
+.address-pic p img {
+    mix-blend-mode: multiply;
+    width: 720px;
+    height: 1224px;
+}
+
+.contacts-block {
+    display: grid;
+    height: 265px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template: "mark location" ".. address" "mail admail" "phone number";
+    grid-column-gap: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.contacts-block img:first-child {
+    grid-area: mark;
+    width: 32px;
+    height: 44px;
+}
+
+.contacts-block span {
+    grid-area: location;
+}
+
+.contacts-block p {
+    grid-area: address;
+    width: 50%;
+}
+
+.contacts-block img:nth-child(4) {
+    grid-area: mail;
+    width: 24px;
+    height: 18px;
+}
+
+.contacts-block a {
+    grid-area: admail;
+}
+
+.contacts-block img:nth-child(6) {
+    grid-area: phone;
+    width: 18px;
+    height: 28.8px;
+}
+
+.contacts-block a:last-child {
+    grid-area: number;
+}
+
+/*          form            */
+
+.form {
+    height: 558px;
+    width: 100%;
+    z-index: 1;
+}
+
+.form .wrapper
+{
+    position: relative;
+    max-width: 1146px;
+}
+
+.form-block {
+    width: 1146px;
+    height: 720px;
+    z-index: 3;
+    position: absolute;
+    top: -130px;
+    left: 0;
+}
+
+.form-block h5
+{
+    padding-top: 108px;
+    padding-left: 98px;
+}
+.form-block form
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template: "ln lm" "name message" "lemail message" "email message" ".. submit";
+    width: 950px;height: 380px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+label[for=name]
+{
+    grid-area: ln;
+}
+
+label[for=email]
+{
+    grid-area: lemail;
+}
+
+label[for=message]
+{
+    grid-area: lm;
+}
+#name
+{
+    grid-area: name;
+}
+
+
+#email
+{
+    grid-area: email;
+}
+
+#message
+{
+    grid-area: message;
+}
+
+form .btn_big
+{
+    border: 0;
+    display: flex;
+    justify-content: center;
+    grid-area: submit;
+    align-self: end;
+}
+
+form .btn_big:focus,form .btn_big:active,form .btn_big:hover
+{
+    outline:none;
+    background-color: #F61067;
+}
+
+/*          footer          */
+
+footer .wrapper {
+    padding-top: 125px;
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.f-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flogo {
+    display: flex;
+    flex-direction: column;
+}
+
+.flogo span {
+    padding-bottom: 15px;
+}
+
+.flogo span {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 43px;
+    /* identical to box height */
+    letter-spacing: 2px;
+}
+
+.fmenu, .fserv, .fcontact, .follow ul {
+    list-style: none;
+    color: #fff;
+}
+
+.fhr {
+    /* Colors/Primary */
+    background: #F61067;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+    border: 0;
+}
+
+.follow div {
+    position: relative;
+}
+
+.follow ul {
+    position: absolute;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 210px;
+    top: 0;
+    left: 0;
+}
+
+.fserv li:first-child, .fmenu li:first-child, .fcontact li:first-child {
+    padding-bottom: 27px;
+    text-decoration: none;
+}
+
+footer li a {
+    color: #fff;
+}
+
+.fmenu li, .fserv li, .fcontact li {
+    padding-bottom: 5px;
+}
+
+.fcontact li img {
+    padding-right: 21px;
+}
+
+.authorM {
+    font-family: 'M PLUS 1p', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11.7px;
+    line-height: 19px;
+    /* identical to box height */
+    /* Colors/White */
+    color: #FCFCFC;
+    align-self: center;
+    padding-top: 50px;
+}
