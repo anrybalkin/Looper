@@ -541,6 +541,7 @@ footer .wrapper {
 .fserv li:first-child, .fmenu li:first-child, .fcontact li:first-child {
     padding-bottom: 27px;
     text-decoration: none;
+    text-align: center;
 }
 
 footer li a {
